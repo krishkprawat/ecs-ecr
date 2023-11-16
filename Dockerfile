@@ -4,7 +4,7 @@ FROM node:18 as builder
 
 WORKDIR /build
 
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
 
 COPY src/ src/
